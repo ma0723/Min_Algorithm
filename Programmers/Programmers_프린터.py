@@ -27,7 +27,8 @@ def find(q, lst, target):
         idx = value[1]
         # 찾고자 하는 target을 알파벳대신 인덱스 숫자로 별도 표기
         if priority < max(lst):
-        # 나머지 인쇄 대기목e)
+        # 나머지 인쇄 대기목록에 존재하면
+            q.append(value)
         # J를 대기목록의 가장 마지막에 넣습니다
         else:
             # 그렇지 않으면 J를 인쇄

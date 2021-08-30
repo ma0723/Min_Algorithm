@@ -18,6 +18,7 @@ def f(i, N, K,s, r ):
         return
     else:
         f(i+1,N,K,s,r-(i+1))
+        # i번째 원소를 선택하지 않은 경우
         f(i+1,N,K,s+(i+1),r-(i+1))
         # i번째 원소 선택
 
